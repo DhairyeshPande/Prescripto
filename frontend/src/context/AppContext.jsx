@@ -11,7 +11,8 @@ const AppContextProvider=(props)=>{
 
     const currencySymbol='₹'
 
-    const backendUrl=import.meta.env.VITE_BACKEND_URL
+    // const backendUrl=import.meta.env.VITE_BACKEND_URL
+    const backendUrl="https://prescripto-deploy-backend.onrender.com"
     const [doctors, setDoctors] = useState([])
     // state to store user authentication token
     //const [token,setToken]=useState('')
