@@ -8,8 +8,8 @@ export const DoctorContext = createContext()
 const DoctorContextProvider=(props)=>{
 
     // creating state variable in which we will save the doctor authentication token
-    const backendUrl=import.meta.env.VITE_BACKEND_URL // backendurl to make api call
-
+    // const backendUrl=import.meta.env.VITE_BACKEND_URL // backendurl to make api call
+    const backendUrl="https://prescripto-deploy-backend.onrender.com"
     const [dToken,setDToken]=useState(localStorage.getItem('dToken')?localStorage.getItem('dToken'):'')
 
     // will be calling API and when we get all appointments data, so we will be saving that data in state variable
